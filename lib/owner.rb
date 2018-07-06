@@ -79,7 +79,7 @@ class Owner
         object.mood = "nervous"
       end
     end
-    
+
     @pets = {
       :fishes => [],
       :dogs => [],
@@ -88,6 +88,9 @@ class Owner
   end
 
   def list_pets
+    fish_count
+    dog_count
+    cat_count
     
   end
 end
