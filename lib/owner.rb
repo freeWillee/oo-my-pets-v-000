@@ -73,14 +73,14 @@ class Owner
   end
 
   def sell_pets
-    @pets.each do |pet|
-      pet.each do |array|
-        array.each do |object|
-          object.mood = "nervous"
-        end
+    #set mood of all pets to "nervous"
+    @pets.collect do |pets, array_of_petObjects|
+      array_of_petObjects.each do |object|
+        object.mood = "nervous"
       end
     end
-
+          
+    
     @pets = {
       :fishes => [],
       :dogs => [],
