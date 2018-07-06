@@ -80,7 +80,7 @@ class Owner
         end
       end
     end
-    end
+  end
 
     @pets = {
       :fishes => [],
