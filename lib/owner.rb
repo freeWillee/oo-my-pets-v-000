@@ -72,4 +72,16 @@ class Owner
     end
   end
 
+  def sell_pets
+    @pets.each do |pet|
+      pet.each do |o|
+        o.mood = "nervous"
+      end
+    end
+    @pets = {
+      :fishes => [],
+      :dogs => [],
+      :cats => []
+    }
+  end
 end
