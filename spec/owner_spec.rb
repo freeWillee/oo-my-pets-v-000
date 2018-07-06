@@ -114,7 +114,6 @@ describe Owner do
       it "walks the dogs which makes the dogs' moods happy" do
         dog = Dog.new("Daisy")
         owner.pets[:dogs] << dog
-        binding.pry
         owner.walk_dogs
         expect(dog.mood).to eq("happy")
       end
@@ -154,6 +153,7 @@ describe Owner do
         [fido, tabby, nemo].each { |o| expect(o.mood).to eq("nervous") }
       end
     end
+    binding.pry
 
     describe "#list_pets" do
       it 'can list off its pets' do
