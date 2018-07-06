@@ -79,7 +79,7 @@ class Owner
           mood = "nervous"
         end
       end
-      end
+    end
     end
 
     @pets = {
