@@ -114,6 +114,7 @@ describe Owner do
       it "walks the dogs which makes the dogs' moods happy" do
         dog = Dog.new("Daisy")
         owner.pets[:dogs] << dog
+        binding.pry
         owner.walk_dogs
         expect(dog.mood).to eq("happy")
       end
