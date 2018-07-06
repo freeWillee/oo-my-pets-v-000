@@ -153,7 +153,6 @@ describe Owner do
         [fido, tabby, nemo].each { |o| expect(o.mood).to eq("nervous") }
       end
     end
-    # binding.pry
 
     describe "#list_pets" do
       it 'can list off its pets' do
